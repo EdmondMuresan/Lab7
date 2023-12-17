@@ -5,12 +5,10 @@
              Title="ListPage" xmlns:local="clr-namespace:Muresan_Edmond_Ferenc_Lab7.Models">
     <StackLayout Margin="20">
         <Editor Placeholder="Enter the description of the shopping list"
-        Text="{Binding Description}"
-        HeightRequest="50">
-            <Editor.Behaviors>
-                <local:ValidationBehaviour />
-            </Editor.Behaviors>
-        </Editor>
+                Text="{Binding Description}"
+                HeightRequest="50" />
+
+        <Picker x:Name="ShopPicker" Title="Enter Shop Name"/>
 
         <Grid>
             <Grid.ColumnDefinitions>
